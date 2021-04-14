@@ -1,4 +1,5 @@
 ﻿using System;
+using Windows.Storage;
 using SDL2;
 
 namespace JustinCredible.PacEmu.UWP
@@ -20,11 +21,9 @@ namespace JustinCredible.PacEmu.UWP
         {
             Emulator.Start(new EmulatorConfig()
             {
-                RomPath = ".\\roms\\pacman",
+                RomPath = ApplicationData.Current.LocalFolder.Path,
                 RomSet = ROMSet.PacMan,
-
-                //RomPath = ".\\roms\\mspacman",
-                //RomSet = ROMSet.MsPacMan,
+                //RomSet = ROMSet.MsPacMan
             });
 
             return 0;
