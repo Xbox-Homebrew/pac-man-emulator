@@ -114,9 +114,8 @@ Homebrew ROMs that target the Pac-Man hardware can be run by leaving the `--rom-
 7. Setup for remote deploy to Xbox
     * Project Properties > Debug > Start Options > Authentication Mode: `Universal (Unencrypted Protocol)`
     * Enter IP address of Xbox
-8. Place ROMs in `emulator.uwp/roms`
-    * See [readme](emulator.uwp/roms/readme.txt) for more details
 8. Click the green play button labeled `Remote Machine` to deploy and start running/debugging
+9. Place roms in the app's localstate folder
 
 ## Interactive Debugger
 
